@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudarshan Bhosale - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: '#3B82F6', // Blue 500
+              light: '#60A5FA', // Blue 400
+              dark: '#2563EB',  // Blue 600
+            },
+            secondary: '#10B981', // Emerald 500
+            neutral: {
+              light: '#F9FAFB', // Gray 50
+              DEFAULT: '#F3F4F6', // Gray 100
+              dark: '#1F2937',   // Gray 800
+              text: '#374151',  // Gray 700
+              textlight: '#6B7280', // Gray 500
+            },
+            // Dark theme colors for Education section (inspired by screenshot)
+            darkTheme: {
+              background: '#0F172A', // Example: Slate 900 (Dark Blue/Charcoal)
+              card: '#1E293B',       // Example: Slate 800 (Slightly Lighter Dark Blue/Charcoal)
+              textHeading: '#E2E8F0', // Example: Slate 200 (Light Gray for headings)
+              textMuted: '#94A3B8',   // Example: Slate 400 (Muted text)
+              accent: '#38BDF8',     // Example: Sky 500 (Accent color for labels like "Institute:")
+              textValue: '#CBD5E1'   // Example: Slate 300 (Text for values)
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased">
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <a href="#home" class="text-2xl font-bold text-primary"></a>
+      </div>
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="hamburger-icon inline-flex items-center justify-center p-2 rounded-md text-neutral-dark hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a href="#home" class="nav-link-mobile">Home</a>
+      <a href="#about" class="nav-link-mobile">About</a>
+      <a href="#education" class="nav-link-mobile">Education</a>
+      <a href="#projects" class="nav-link-mobile">Projects</a>
+      <a href="#skills" class="nav-link-mobile">Skills</a>
+      <a href="#resume" class="nav-link-mobile">Resume</a>
+      <a href="#certifications" class="nav-link-mobile">Certifications</a>
+      <a href="#contact" class="nav-link-mobile">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="section-padding bg-neutral flex items-center min-h-screen">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <img 
+      src="./resources/Profile_Photo.jpg" 
+      alt="Sudarshan Bhosale" 
+      class="profile-photo w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-6 shadow-xl border-4 border-white"
+      onerror="this.onerror=null;this.src='https://placehold.co/200x200/CCCCCC/FFFFFF?text=Profile+Image';"
+    />
+    <h1 class="text-4xl md:text-5xl font-extrabold text-neutral-dark mb-2">Sudarshan Bhosale</h1>
+    <h2 class="text-2xl md:text-3xl font-semibold text-primary mb-6">Java Developer</h2>
+    <p class="text-lg md:text-xl text-neutral-textlight max-w-2xl mx-auto">
+      Passionate about building efficient, scalable, and user-friendly applications. I enjoy solving real-world problems through clean and maintainable code.
+    </p>
+    <a href="#contact" class="mt-8 inline-block bg-primary text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-primary-dark transition-colors duration-300 text-lg">
+      Get In Touch
+    </a>
+  </div>
+</section>
+
+<section id="about" class="section-padding">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark text-center mb-12">About Me</h2>
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-lg text-neutral-textlight leading-relaxed">
+        I’m Sudarshan Bhosale, a passionate Java developer dedicated to building efficient,
+        scalable, and user-friendly applications. With a strong foundation in backend
+        development and a keen interest in full-stack technologies, I enjoy solving
+        real-world problems through clean and maintainable code. Outside of coding, I
+        love playing cricket and continuously exploring new tech trends to sharpen my
+        skills.
+      </p>
+    </div>
+    </div>
+</section>
+
+<section id="education" class="section-padding bg-white-background">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark-textHeading text-center mb-12">Education</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div class="bg-darkTheme-card p-6 rounded-lg shadow-xl card-hover education-tile">
+        <h4 class="text-xl font-semibold text-darkTheme-accent mb-3">Information Technology (BE)</h4>
+        <p><strong class="text-darkTheme-accent">College</strong> <span class="text-darkTheme-textValue">Sinhgad Academy of Engoneering Pune</span></p>
+        <p><strong class="text-darkTheme-accent"></strong> <span class="text-darkTheme-textValue">2020-2024</span></p>
+      </div>
+      <div class="bg-darkTheme-card p-6 rounded-lg shadow-xl card-hover education-tile">
+        <h4 class="text-xl font-semibold text-darkTheme-accent mb-3">HSC</h4>
+        <p><strong class="text-darkTheme-accent">College</strong> <span class="text-darkTheme-textValue">Vishwakarma College of arts commerce and Science</span></p>
+        <p><strong class="text-darkTheme-accent">Duration:</strong> <span class="text-darkTheme-textValue">2018-2020</span></p>
+      </div>
+      
+      <div class="bg-darkTheme-card p-6 rounded-lg shadow-xl card-hover education-tile md:col-start-auto lg:col-start-auto">
+        <h4 class="text-xl font-semibold text-darkTheme-accent mb-3">SSC</h4>
+        <p><strong class="text-darkTheme-accent">School</strong> <span class="text-darkTheme-textValue">Valley View High School</span></p>
+        <p><strong class="text-darkTheme-accent">Duration:</strong> <span class="text-darkTheme-textValue">2018</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-padding bg-neutral">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark text-center mb-12">Projects</h2>
+    <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover flex flex-col">
+        <h3 class="text-2xl font-bold text-primary mb-3">Grocery Billing System</h3>
+        <p class="text-neutral-textlight mb-4 flex-grow">A minor project developed using Python to manage grocery billing efficiently.</p>
+        <p><strong>Technologies:</strong> <span class="bg-primary-light text-primary-dark text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Python</span></p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover flex flex-col">
+        <h3 class="text-2xl font-bold text-primary mb-3">Teeth Detection and Dental Problem Classification</h3>
+        <p class="text-neutral-textlight mb-4 flex-grow">A major project using Deep Learning techniques to detect teeth and classify dental problems.</p>
+        <p><strong>Technologies:</strong> 
+          <span class="bg-primary-light text-primary-dark text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Deep Learning</span>
+          <span class="bg-primary-light text-primary-dark text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-padding">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark text-center mb-12">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">Java</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">C</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">C++</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">HTML</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">CSS</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">Spring Framework</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">SQL</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">MongoDB</span>
+      <span class="bg-secondary text-white text-lg font-medium px-6 py-3 rounded-full shadow-md">GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="section-padding bg-neutral">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">Resume</h2>
+    <p class="text-lg text-neutral-textlight mb-8">You can download my resume below:</p>
+    <a href="./resources/SudarshanBhosale(CV).pdf" download class="bg-primary text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-primary-dark transition-colors duration-300 text-lg">
+      View Resume
+    </a>
+  </div>
+</section>
+
+<section id="certifications" class="section-padding">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark text-center mb-12">Certifications</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+        <h4 class="text-xl font-bold text-primary mb-3">JAVA</h4>
+        <a href="./resources/certifications/JAVA.pdf" target="_blank" class="inline-block bg-primary-light text-primary-dark font-medium py-2 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300">View Certificate</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+        <h4 class="text-xl font-bold text-primary mb-3">Java Generics and Collections</h4>
+        <a href="./resources/certifications/Java_Generics_Collections.pdf" target="_blank" class="inline-block bg-primary-light text-primary-dark font-medium py-2 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300">View Certificate</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+        <h4 class="text-xl font-bold text-primary mb-3">HTML</h4>
+        <a href="./resources/certifications/HTML.pdf" target="_blank" class="inline-block bg-primary-light text-primary-dark font-medium py-2 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300">View Certificate</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+        <h4 class="text-xl font-bold text-primary mb-3">SQL</h4>
+        <a href="./resources/certifications/SQL.pdf" target="_blank" class="inline-block bg-primary-light text-primary-dark font-medium py-2 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-padding bg-neutral-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Contact Me</h2>
+    <p class="text-lg text-neutral-light mb-8 max-w-md mx-auto">
+      Feel free to reach out if you'd like to collaborate or just say hi!
+    </p>
+    <div class="space-y-4 max-w-sm mx-auto">
+      <a href="mailto:sudarshanbhosale18@gmail.com" class="block text-lg text-primary-light hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+        sudarshanbhosale18@gmail.com
+      </a>
+      <a href="tel:+919325975693" class="block text-lg text-primary-light hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.308 1.154a11.042 11.042 0 005.516 5.516l1.154-2.308a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        +91-9325975693
+      </a>
+      <a href="https://github.com/SudarshanBhosale18" target="_blank" rel="noreferrer" class="block text-lg text-primary-light hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2 h-6 w-6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        SudarshanBhosale18
+      </a>
+      <a href="www.linkedin.com/in/sudarshan-bhosale-249030225" target="_blank" rel="noreferrer" class="block text-lg text-primary-light hover:text-white transition-colors duration-300">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2 h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-neutral-dark text-neutral-light py-8 text-center">
+  <p>&copy; <span id=""></span>Sudarshan Bhosale. All rights reserved.</p>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => {
+    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+    mobileMenu.classList.toggle('hidden');
+    mobileMenuButton.classList.toggle('open');
+  });
+
+  document.querySelectorAll('#mobile-menu a, .nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (link.closest('#mobile-menu')) { // Only for links inside mobile menu
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.classList.remove('open');
+      }
+      // For smooth scrolling if the link is an anchor
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        // e.preventDefault(); // Already handled by scroll-smooth on html
+        // const targetElement = document.querySelector(href);
+        // if (targetElement) {
+        //   targetElement.scrollIntoView({ behavior: 'smooth' });
+        // }
+      }
+    });
+  });
+
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
