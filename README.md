@@ -35,9 +35,7 @@ This is the personal portfolio website of Sudarshan Bhosale, a passionate Java D
 
 ## Getting Started
 
-To run this project locally:
+To run this project:
 
-1. Clone the repository:
+Live Link - 
 
-   ```bash
-   git clone https://github.com/SudarshanBhosale18/portfolio.git
